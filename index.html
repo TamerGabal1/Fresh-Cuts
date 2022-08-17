@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Fresh Cuts</title>
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script type="module" src="/script.js" defer></script>
+    <script type="module" src="/firebase.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+<div id="header"> 
+    <h1>Fresh-Cuts</h1>
+    </div>
+<!--   <h3>
+Where Time Is Valued
+  </h3> -->
+   
+    
+    
+    
+<!-- nav bar here     -->
+<!--         <img class="items" src=logo"> -->
+     
+  
+     <img id="topimage" src="https://cdn.glitch.global/e2fe95ea-0d88-444a-a46c-ca2bb17f6295/Screenshot%202022-08-14%20141508.png?v=1660511788542"> 
+<!--   pole   -->
+<!--   <img id="bar-pole" src="https://cdn.glitch.global/e2fe95ea-0d88-444a-a46c-ca2bb17f6295/e3fcc33b-dde8-40d2-8aee-07e5642a674c.image.png?v=1660592474727"> -->
+  
+  
+  <div id="navimg">
+    
+    <div class="navbar">
+          
+       <div class="items">Home</div>
+<!--           <div class="items">Join a Cue</div> -->
+          <div class="items"><a href="#aptDiv">Appointment</a></div>
+<!--           <div class="items">My Cue</div> -->
+          <div class="items"><a href="faq.html">FAQ</a></div>
+
+     </div>
+    
+  </div>
+  
+    
+    <div id="search">
+      <form>
+        <label>Enter a Zip Code:</label>
+        <input id="zipCode">
+        <button id="searchButton">Search</button>
+      </form>
+    </div>
+  
+  <div id="filter">
+    
+  </div>
+    
+  <div id="allCards">
+      <div class="cardContainer">
+        
+    </div>
+  </div>                            
+       
+<!--   <div id="navimg">
+    
+    <div class="navbar">
+          
+       <div class="items">Home</div>
+          <div class="items">Join a Cue</div>
+          <div class="items">Appointment</div>
+          <div class="items">My Cue</div>
+
+     </div>
+    
+  </div> -->
+  
+<!-- background img    -->
+<!--   <img id="background" src="https://cdn.glitch.global/e2fe95ea-0d88-444a-a46c-ca2bb17f6295/72fda41a-03df-4329-b456-b4615580bc77.image.png?v=1660619936698"> -->
+<!--   
+  <div id="appointments" class = "dropdown">
+    <button class="dropbtn">Appointments</button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>  
+  </div> -->
+<!-- work to make this looks better   -->
+    <div id="aptDiv">
+      <div>
+        <h2>
+          Make an Appointment
+        </h2>
+        <input type="date" id="aptCalendar">
+        <select id="aptTimes">
+          <option value="10A-11A">10AM - 11AM</option>
+          <option value="11A-12P">11AM - 12PM</option>
+          <option value="12P-1P">12PM - 1PM</option>
+          <option value="1P-2P">1PM - 2PM</option>
+          <option value="2P-3P">2PM - 3PM</option>
+          <option value="3P-4P">3PM - 4PM</option>
+          <option value="4P-5P">4PM - 5PM</option>
+        </select>   
+        <button id="aptBtn">Submit</button>
+      </div>
+    </div>
+    
+    <button id="myBtn"><a href="#top" style="color: white">Top</a></button>
+  </body>
+</html>

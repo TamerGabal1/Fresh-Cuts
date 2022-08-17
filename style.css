@@ -1,0 +1,271 @@
+
+/* style */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+body{
+  background-color:white;
+  
+}
+
+
+#header{
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        color:rgb(228, 189, 14) solid;
+    
+        background-color: #3294b8;
+        border: 4px black solid; 
+/*         font-size: 50px; */
+        margin-bottom: 10px;
+  }
+
+/*     background-color: #c3c6c9; */
+    
+.items {
+    display: inline-block;
+    position: relative;
+    color:white;
+  }
+  
+  .items:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .items:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+  }
+
+/* front end things */
+#topimage{
+  width: 200px;
+  height:200px;
+  display:block;
+  margin: 0px auto 30px; 
+  border-radius: 50%;
+  border:8px solid  #3294b8;
+  
+    
+}
+
+  .navbar{
+    display:flex;
+    justify-content: space-around;
+    padding: 1px;
+    font-size:30px;
+    font-family: serif; 
+    margin-top:1%;
+    
+    color: rgb( 255, 255, 255);
+
+  }
+  
+  #navimg{
+  
+
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0,0,0,0.3)), url('https://cdn.glitch.global/e2fe95ea-0d88-444a-a46c-ca2bb17f6295/a0f23862-3d87-4131-815a-196a6cd9351f.image.png?v=1660588774320') center/cover no-repeat fixed;
+}
+  
+
+
+
+#search{
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0,0,0,0.3)), url("https://cdn.glitch.global/e2fe95ea-0d88-444a-a46c-ca2bb17f6295/72fda41a-03df-4329-b456-b4615580bc77.image.png?v=1660619936698") center/cover no-repeat fixed;
+/*   background: url("https://cdn.glitch.global/e2fe95ea-0d88-444a-a46c-ca2bb17f6295/72fda41a-03df-4329-b456-b4615580bc77.image.png?v=1660619936698"); */
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+
+/* poleimg */
+#bar-pole{
+height:210px;
+  width:200px;
+  
+}
+
+
+#joinCue{
+/*   display: flex;
+  justify-content: center;
+  flex-direction: column; */
+  padding: 100px;
+}
+
+/* .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+
+#appointments{
+  display: none;
+}
+
+#aptDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#aptDiv > *{
+  width: 20%;
+  text-align: center;
+  background-color: #3294b8;
+  padding-bottom: 20px;
+  border-radius: 100px;
+}
+
+
+.cards{
+  margin:20px auto;
+  width:30%;
+  text-align:center;
+  padding:20px;
+  border: 11px solid #3294b8;
+  border-radius: 25px;
+/*   background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0,0,0,0.3)), url("https://cdn.glitch.global/e2fe95ea-0d88-444a-a46c-ca2bb17f6295/686d3722-3ac5-4a78-9191-49ee8f26c924.image.png?v=1660758123352") center/cover no-repeat fixed; */
+/*   background-image:url("https://cdn.glitch.global/e2fe95ea-0d88-444a-a46c-ca2bb17f6295/686d3722-3ac5-4a78-9191-49ee8f26c924.image.png?v=1660758123352"); */
+  color:black;
+/*   text-shadow: 2px 2px black; */
+  font-weight: bolder;
+}
+
+@media(max-width:760px){
+  .cards{
+  width:70%;
+
+  }
+}
+
+#filter{
+  display: flex;
+  justify-content: center;
+}
+
+#filter > button{
+  border-radius:10px;
+  border: 4px black solid;
+  color:white;
+  background-color:purple;
+  padding:20px;
+  font-weight:bold
+}
+
+ a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+/*Floating Back-To-Top Button*/
+    #myBtn {
+        position: fixed;
+        bottom: 30px;
+        float: right;
+        right: 5%;
+        left: 95%;
+        max-width: 30px;
+        width: 100%;
+        font-size: 12px;
+        border-color: rgba(85, 85, 85, 0.2);
+        background-color: rgb(100,100,100);
+        padding: 10px;
+        padding-right: 30px;
+        border-radius: 7px;
+
+    }
+/*On Hover Color Change*/
+    #myBtn:hover {
+        background-color: #7dbbf1;
+    }
+
+
+
+#mission{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+#questions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+#mission > h1{
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+#questions > h1{
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+#questions > h2{
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+p{
+  font-size: 25px;
+  margin: 30px;
+}
+
