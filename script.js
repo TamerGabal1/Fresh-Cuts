@@ -1,6 +1,6 @@
 import { ref, push, set, database, onValue, get } from "./firebase.js";
 
-const proxy = "https://nextjs-cors-anywhere.vercel.app/api?endpoint=";
+const proxy = "https://nextjs-cors-anywhere-qo438t97q-deybyr647.vercel.app/api?endpoint=";
 let zipCode = 10000;
 
 let zipCodeInput = document.getElementById("zipCode");
@@ -45,7 +45,7 @@ searchButton.onclick = (e) => {
     // const api2 = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?keyword=barbershop&location=" + geolocation.results[0].geometry.location.lat + "," + geolocation.results[0].geometry.location.lng + "&radius=1500&rankby=distance" + "&key=AIzaSyDsLhGBee6Gu3UJj0J1e-XUTPhdRRG0PJ8";
     // const api3 = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=barbershop%20near%20" + zipCode + "&inputtype=textquery&key=AIzaSyDsLhGBee6Gu3UJj0J1e-XUTPhdRRG0PJ8"
     console.log(api)
-    fetch(proxy + api)
+    fetch(proxy+api)
       .then((response) => response.json())
       .then((data) => {
         console.log(zipCode);
